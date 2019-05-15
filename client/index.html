@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>AnonPost</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="wrapper">
+        <div id="container">
+          <h1>AnonPost</h1>
+          <br />
+          <br />
+          <h2 class="title">Make an anonymous post now!</h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <form class="postform">
+        <label for="name">Name</label>
+        <br />
+        <input class="col-md-12 rounded" type="text" id="name" name="name" />
+        <br />
+        <label for="message">Message</label>
+        <br />
+        <textarea
+          class="col-md-12 rounded"
+          type="text"
+          id="message"
+          name="message"
+        ></textarea>
+        <button class="rounded btn-primary">Post!</button>
+      </form>
+      <div id="gif">
+        <img src="tenor.gif" width="30px" alt="Posting" class="center" />
+      </div>
+      <div class="posts"></div>
+    </main>
+    <script src="client.js"></script>
+  </body>
+</html>
